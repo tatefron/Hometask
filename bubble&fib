@@ -1,0 +1,21 @@
+// Домашнее задание урок №9 
+// №1 
+	var arr = [1, 9, 4, 5, 2, 7, 8, 6, 3];
+ 		for (var i = 0; i < arr.length-1; i++)
+ 		for (var j = 0; j < arr.length-1-i; j++)
+ 		if (arr[j]> arr[j+1]) {
+	var arr1 = arr[j];
+		arr[j] = arr[j+1];
+		arr[j+1] = arr1;
+	}
+ 		console.log(arr);
+// №2
+var fib = []; 
+fib[0] = 1;
+fib[1] = 1;
+var count = prompt('Введите порядковый номер', );
+	for(i=2; i<=count-1; i++){
+    fib[i] = fib[i-2] + fib[i-1];	
+      console.log(fib[count-1]);
+
+	}
